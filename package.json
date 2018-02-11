@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "next",
+    "state": "next",
     "test": "echo \"There is no spoon\""
   },
   "repository": {
