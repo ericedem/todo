@@ -38,7 +38,7 @@ jobs:
 
 
 deployment:
-  production:
+  staging:
     branch: master
     heroku:
       appname: eric-todo
