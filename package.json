@@ -4,8 +4,9 @@
   "description": "A Todo App",
   "main": "server.js",
   "scripts": {
+    "build": "next build",
     "dev": "next",
-    "start": "next",
+    "start": "next start -p $PORT",
     "test": "echo \"There is no spoon\""
   },
   "repository": {
