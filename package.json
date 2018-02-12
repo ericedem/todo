@@ -6,6 +6,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
+    "postinstall": "next build",
     "start": "next start -p $PORT",
     "test": "echo \"There is no spoon\""
   },
