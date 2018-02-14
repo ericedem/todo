@@ -6,6 +6,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
+    "precommit": "lint-staged",
     "prestart": "npm run build",
     "start": "next start -p $PORT",
     "test": "echo \"There is no spoon\""
@@ -16,6 +17,9 @@
   },
   "author": "Eric Edem",
   "license": "MIT",
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
+  },
   "bugs": {
     "url": "https://github.com/ericedem/todo/issues"
   },
@@ -25,5 +29,9 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2"
+  }
 }
